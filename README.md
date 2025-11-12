@@ -1,12 +1,27 @@
 API_Automation_Testing/
 │
-├── pom.xml                     → Maven build file (manages dependencies & plugins)
+├── pom.xml                         # Maven build file – manages dependencies & plugins
+│
 ├── src/
-│   ├── main/
-│   │   └── java/               → Main code (usually utility or base classes)
+│   ├── main/java/
+│   │   └── base/                   # Base classes & utility methods
+│   │       ├── BaseClass.java      # Common setup (base URI, headers, request specs)
+│   │       └── Utils.java          # Helper methods (token parsing, logging, etc.)
+│   │
 │   └── test/
-│       ├── java/               → Step Definitions, Runners, API logic
-│       └── resources/          → Feature files (Cucumber Gherkin)
-├── target/                     → Compiled output & reports
-├── logging.txt                 → Log output (custom logging)
-└── .idea/, .git/, .mvn/        → IntelliJ & Git config folders
+│       ├── java/
+│       │   ├── stepDefinations/    # Step Definitions for Cucumber feature steps
+│       │   ├── runners/            # TestRunner classes (Cucumber + JUnit)
+│       │   └── apiTests/           # API logic classes and response validations
+│       │
+│       └── resources/
+│           ├── features/           # Cucumber Gherkin feature files
+│           │   └── placeValidations.feature
+│           └── extent-config.xml   # ExtentReport configuration file
+│
+├── target/                         # Compiled classes, test reports & logs
+│
+├── logging.txt                     # Custom log file generated during test runs
+│
+└── .idea/, .git/, .mvn/            # IntelliJ & Git configuration folders
+
