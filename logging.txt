@@ -1,0 +1,49 @@
+Request method:	POST
+Request URI:	https://us-central1-nn-api-challenge.cloudfunctions.net/api/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "AAhouse",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "World cross center",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 404 Not Found
+x-powered-by: Express
+vary: Origin
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+content-type: text/html; charset=utf-8
+x-cloud-trace-context: 734f505e1f9ee2ce880af85b630bc622;o=1
+date: Tue, 11 Nov 2025 16:31:52 GMT
+server: Google Frontend
+Content-Length: 163
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot POST /maps/api/place/add/json</pre>
+  </body>
+</html>

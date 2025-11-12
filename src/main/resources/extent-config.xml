@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>utf-8</encoding>
+        <protocol>https</protocol>
+        <documentTitle>API Automation Test Report</documentTitle>
+        <reportName>NeuroNation API Test Report</reportName>
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <enableOfflineMode>true</enableOfflineMode>
+        <js>
+            <![CDATA[
+                document.title = 'NeuroNation API Automation';
+            ]]>
+        </js>
+    </configuration>
+</extentreports>
